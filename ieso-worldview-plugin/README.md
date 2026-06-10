@@ -10,13 +10,15 @@ The assistant runs on **your own Claude** (no separate LLM API key).
 
 ## Install
 
+Inside Claude Code:
+
 ```
-/plugin marketplace add REPLACE-WITH-OWNER/ieso-worldview-plugin
+/plugin marketplace add sanzog03/claude-skills-and-plugins
 /plugin install ieso-worldview@ieso-worldview-marketplace
 ```
 
-On enable, Claude Code prompts you for any required tokens (see
-**Configuration**). Then just ask, e.g.:
+On install, Claude Code prompts you for any required tokens (see
+**Configuration**); they go into your OS keychain. Then just ask, e.g.:
 
 > "Show me sea surface temperature anomalies for the Gulf of Mexico last week."
 
