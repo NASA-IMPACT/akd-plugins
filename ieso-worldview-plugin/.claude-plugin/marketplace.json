@@ -7,10 +7,7 @@
   "plugins": [
     {
       "name": "ieso-worldview",
-      "source": {
-        "type": "github",
-        "repo": "REPLACE-WITH-OWNER/ieso-worldview-plugin"
-      },
+      "source": "./",
       "description": "Explore NASA Worldview in natural language: discover satellite datasets, understand what they represent, and generate reproducible map visualizations.",
       "version": "0.1.0"
     }
