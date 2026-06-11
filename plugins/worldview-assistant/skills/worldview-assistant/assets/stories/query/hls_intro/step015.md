@@ -1,1 +1,0 @@
-This image shows the city of Colon, where the Panama Canal exits into the Atlantic Ocean. Note that you can see ships in Gatun Lake, as well as in the Atlantic Ocean.

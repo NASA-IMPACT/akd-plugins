@@ -1,3 +1,0 @@
-The Day/Night Band allows scientists to monitor various nighttime phenomena on the Earth's surface and atmosphere in low light conditions on a daily basis. This “Black Marble Nighttime At Sensor Radiance” layer is created from the at sensor top-of-atmosphere night time Day/Night Band radiance product (VNP46A1).
-
-- The Day/Night Band sensor is on the Visible Infrared Imaging Radiometer Suite ([VIIRS](https://www.earthdata.nasa.gov/data/instruments/viirs)) aboard the joint NASA/NOAA Suomi National Polar orbiting Partnership ([Suomi NPP](https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/suomi-npp)) satellite and [NOAA-20](https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/noaa-20) satellite.

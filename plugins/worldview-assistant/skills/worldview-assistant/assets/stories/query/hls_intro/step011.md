@@ -1,1 +1,0 @@
-Swipe to see pivot irrigation in Egypt come into focus with this higher resolution imagery.

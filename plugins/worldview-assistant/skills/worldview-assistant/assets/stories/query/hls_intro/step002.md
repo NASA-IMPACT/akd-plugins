@@ -1,1 +1,0 @@
-The Harmonized Landsat Sentinel-2 (HLS) project brings us 30 meter resolution true color surface reflectance imagery from the Operational Land Imager (OLI) instrument aboard the NASA/USGS Landsat 8 and 9 satellites, and the Multi-Spectral Instrument (MSI) aboard the European Space Agency (ESA) Sentinel-2A, Sentinel-2B, and Sentinel-2C satellites.

@@ -1,1 +1,0 @@
-<p>Hurricanes Katia, Irma and Jose - The Nighttime imagery layer from the Day/Night Band of the VIIRS instrument here highlights three hurricanes crossing the North Atlantic Ocean, Caribbean Sea and the Gulf on 8 September 2017. </p>
