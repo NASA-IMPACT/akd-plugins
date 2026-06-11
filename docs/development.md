@@ -54,8 +54,14 @@ the plugin subdir) and install from it:
 ```
 
 While iterating, `/reload-plugins` picks up most file edits without a restart.
-Exceptions: changes to `userConfig` in `plugin.json` need a
-`/plugin uninstall` + `/plugin install` cycle to re-prompt for tokens.
+Exceptions:
+
+- Changes to `userConfig` in `plugin.json` need a
+  `/plugin uninstall` + `/plugin install` cycle to re-prompt for tokens.
+- Changes to `marketplace.json` (e.g. registering a new plugin) need
+  `/plugin marketplace update akd-agents` before the new entry is
+  installable — re-running `/plugin marketplace add` with the same path
+  reports success but serves the stale catalog.
 
 To re-test against the GitHub-distributed version (recommended before
 declaring a change shipped), do a clean cycle — Claude Code caches the
