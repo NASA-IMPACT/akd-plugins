@@ -1,13 +1,14 @@
 {
-  "name": "ieso-worldview-marketplace",
+  "name": "akd-agents",
+  "description": "AKD Agents for Earth Science — Claude Code plugins for exploring NASA Earth-observation data.",
   "owner": {
     "name": "Sanjog Thapa",
     "email": "sanjog.thapa@uah.edu"
   },
   "plugins": [
     {
-      "name": "ieso-worldview",
-      "source": "./",
+      "name": "worldview-assistant",
+      "source": "./plugins/worldview-assistant",
       "description": "Explore NASA Worldview in natural language: discover satellite datasets, understand what they represent, and generate reproducible map visualizations.",
       "version": "0.1.0"
     }

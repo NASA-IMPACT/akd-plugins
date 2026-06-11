@@ -11,9 +11,12 @@ The assistant runs on **your own Claude** (no separate LLM API key).
 ## Install
 
 ```
-/plugin marketplace add REPLACE-WITH-OWNER/ieso-worldview-plugin
-/plugin install ieso-worldview@ieso-worldview-marketplace
+/plugin marketplace add sanzog03/claude-skills-and-plugins
+/plugin install worldview-assistant@akd-agents
 ```
+
+(For local development: `/plugin marketplace add <path-to-repo>` — pointing
+at the repo root, not the plugin subdir — then the same install command.)
 
 On enable, Claude Code prompts you for any required tokens (see
 **Configuration**). Then just ask, e.g.:

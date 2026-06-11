@@ -1,5 +1,6 @@
 {
-  "name": "ieso-worldview",
+  "name": "worldview-assistant",
+  "displayName": "Worldview Assistant",
   "description": "Explore NASA Worldview in natural language: discover satellite datasets, render reproducible map visualizations through the GeoUI Protocol, and iterate on them in a live browser.",
   "version": "0.1.0",
   "author": {
