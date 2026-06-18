@@ -1,6 +1,6 @@
 {
   "name": "akd-agents",
-  "description": "AKD Agents for Science — Claude Code plugins for exploring NASA science data, from Earth observation to planetary archives.",
+  "description": "AKD Agents for Science \u2014 Claude Code plugins for exploring NASA science data, from Earth observation to planetary archives.",
   "owner": {
     "name": "Sanjog Thapa",
     "email": "sanjog.thapa@uah.edu"
@@ -16,6 +16,12 @@
       "name": "pds-assistant",
       "source": "./plugins/pds-assistant",
       "description": "Find the right NASA Planetary Data System (PDS) datasets for a planetary-science query: route to the correct PDS node, walk the live archives, and return grounded dataset identifiers and paths.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "akd-playwright",
+      "source": "./plugins/akd-playwright",
+      "description": "Set up and write Playwright e2e tests for any AKD ecosystem Next.js frontend.",
       "version": "0.1.0"
     }
   ]

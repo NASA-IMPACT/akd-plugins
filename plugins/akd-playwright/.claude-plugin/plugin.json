@@ -1,0 +1,11 @@
+{
+  "name": "akd-playwright",
+  "displayName": "AKD Playwright Testing",
+  "description": "Set up and write Playwright end-to-end tests for any AKD ecosystem Next.js frontend. Includes skills for one-time project scaffolding and per-feature test generation.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Luke Payne",
+    "email": "lpayne@sesda.com"
+  },
+  "license": "Apache-2.0"
+}
