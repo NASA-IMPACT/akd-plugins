@@ -39,6 +39,11 @@ Note: After installing/updating a plugin, you may need to `/reload-plugins` for 
 Want to add a plugin to the marketplace or test changes locally? See the
 [development guide](docs/development.md).
 
+If you have an agent built **outside** AKD Labs, the
+[Converting AKD Agents into Plugins](https://github.com/NASA-IMPACT/akd-plugins/wiki/Converting-AKD-Agents-into-Plugins)
+wiki guide covers the full journey — from scattered prompts/artifacts, through AKD
+Labs, to the plugin PR.
+
 ## License
 
 [Apache 2.0](LICENSE)
