@@ -2,6 +2,11 @@
 
 How to add a plugin to the `akd-agents` marketplace and test it locally.
 
+> **If you have an agent built outside AKD Labs**, start with the
+> [Converting AKD Agents into Plugins](https://github.com/NASA-IMPACT/akd-plugins/wiki/Converting-AKD-Agents-into-Plugins)
+> wiki guide — it walks the full path from your existing prompts/artifacts, through
+> AKD Labs, to a finished skill. This page picks up once you have that skill in hand.
+
 ## Adding a plugin to the marketplace
 
 1. Create a directory under `plugins/` with the standard plugin layout:
