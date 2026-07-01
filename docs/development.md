@@ -49,7 +49,7 @@ Add the marketplace from your working copy (point at the **repo root**, not
 the plugin subdir) and install from it:
 
 ```
-/plugin marketplace add /path/to/akd-plugins-claude
+/plugin marketplace add /path/to/akd-plugins
 /plugin install <plugin-name>@akd-agents
 ```
 
@@ -70,7 +70,7 @@ marketplace clone:
 ```
 /plugin uninstall <plugin-name>
 /plugin marketplace remove akd-agents
-/plugin marketplace add NASA-IMPACT/akd-plugins-claude
+/plugin marketplace add NASA-IMPACT/akd-plugins
 /plugin install <plugin-name>@akd-agents
 ```
 

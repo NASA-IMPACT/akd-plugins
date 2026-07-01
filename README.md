@@ -20,7 +20,7 @@ each plugin's README.
 Inside Claude Code:
 
 ```
-/plugin marketplace add NASA-IMPACT/akd-plugins-claude
+/plugin marketplace add NASA-IMPACT/akd-plugins
 ```
 
 ## Available plugins
