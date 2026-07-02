@@ -17,6 +17,12 @@
       "source": "./plugins/pds-assistant",
       "description": "Find the right NASA Planetary Data System (PDS) datasets for a planetary-science query: route to the correct PDS node, walk the live archives, and return grounded dataset identifiers and paths.",
       "version": "0.1.0"
+    },
+    {
+      "name": "code-search-assistant",
+      "source": "./plugins/code-search-assistant",
+      "description": "Discover and comparatively rank public scientific code repositories for a research or technical task across NASA SMD domains — read-only, with reliability signals; returns up to 6 grounded candidates or abstains.",
+      "version": "0.1.0"
     }
   ]
 }

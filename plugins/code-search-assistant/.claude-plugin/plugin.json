@@ -1,0 +1,11 @@
+{
+  "name": "code-search-assistant",
+  "displayName": "Code Search Assistant",
+  "description": "Discover and comparatively rank publicly available scientific code repositories for a research or technical task across NASA SMD domains (Astrophysics, Earth Science, Heliophysics, Planetary Science, Biological & Physical Sciences). Read-only and human-in-the-loop: returns up to 6 grounded candidates with reliability signals, or abstains when nothing fits.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Pushwitha Krishnappa",
+    "email": "pk0055@uah.edu"
+  },
+  "license": "Apache-2.0"
+}
