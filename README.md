@@ -29,6 +29,7 @@ Inside Claude Code:
 |---|---|---|---|
 | [worldview-assistant](plugins/worldview-assistant/README.md) | Explore NASA Worldview in natural language: discover satellite datasets, understand what they represent, and generate reproducible map visualizations. | `/plugin install worldview-assistant@akd-agents` | Invoke the skill directly (`/worldview-assistant:worldview-assistant`) or just ask a matching question — skills auto-trigger from context. See the [plugin README](plugins/worldview-assistant/README.md) for prerequisites, configuration tokens, and example prompts. |
 | [pds-assistant](plugins/pds-assistant/README.md) | Find the right NASA Planetary Data System (PDS) datasets for a planetary-science question: route to the correct PDS node, walk the live archives, and return grounded dataset identifiers and paths. | `/plugin install pds-assistant@akd-agents` | Invoke the skill directly (`/pds-assistant:pds_live_dataset_finder`) or just ask a matching planetary-science question. See the [plugin README](plugins/pds-assistant/README.md) for configuration tokens and example prompts. |
+| [scope-interview](plugins/scope-interview/README.md) | Strict, structured requirements-interview agent that extracts a complete Scope Requirements Document before any design or implementation begins. | `/plugin install scope-interview@akd-agents` | Invoke the skill directly (`/scope-interview:scope-interview`) or just ask to scope a new system. No tokens or setup — see the [plugin README](plugins/scope-interview/README.md). |
 
 (More coming soon..)
 
