@@ -1,8 +1,8 @@
 {
   "name": "scope-interview",
   "displayName": "Scope Interview Agent",
-  "description": "Strict, structured requirements-interview agent that extracts a complete Scope Requirements Document before any design or implementation. Optionally explores the project codebase and writes the doc to docs/scope/.",
-  "version": "0.1.1",
+  "description": "Structured requirements-interview agent that runs a role-gated, clustered interview and produces a single narrative scoping document before any design or implementation. Codebase-aware mode optionally explores the project and saves the doc (plus a raw transcript) to docs/scope/.",
+  "version": "0.2.0",
   "author": {
     "name": "NASA-IMPACT",
     "email": "np0069@uah.edu"

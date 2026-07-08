@@ -1,18 +1,30 @@
 # Scope Interview Agent — Claude Code plugin
 
-A strict, structured **requirements-interview agent**. Point it at a new
-software or scientific system and it extracts a complete **Scope Requirements
-Document** — problem, success criteria, stakeholders, functional and
-non-functional requirements, entities, workflows, risks, and out-of-scope
-boundaries — *before* any design or implementation begins. It asks one question
-at a time, refuses to design or propose architecture, and challenges vague
-answers until the scope is concrete.
+A structured **requirements-interview agent**. Point it at a new software or
+scientific system and it interviews you — role-gated, in short question clusters
+— then produces a single **narrative scoping document** (~3–4 pages): problem,
+success/failure criteria, stakeholders (and their conflicts), scope boundaries,
+functional and non-functional requirements, key entities, workflows, risks, and
+open questions — *before* any design or implementation begins. It refuses to
+design, write code, or answer off-topic questions, and challenges vague answers
+until the scope is concrete.
 
 Especially aimed at NASA / Earth-observation / geospatial / data-science systems
-(AKD-Lab), but works for any project. When run inside a code project it can
-optionally do a read-only survey of the codebase first, so its questions are
-grounded in what already exists, and it writes the finished document to
-`docs/scope/`.
+(AKD-Lab), but works for any project.
+
+## Two modes
+
+The narrative deliverable is the same in both modes — the mode only changes what
+*grounds* the interview and where the document is *saved*:
+
+- **Standard mode (default).** Role-gated, clustered interview → a single
+  stakeholder-friendly narrative document, presented inline. Works with your
+  answers alone, in any chat.
+- **Codebase-aware mode (enhancement — offered, never forced).** When you run it
+  inside a code project (and/or identify as a Developer), it can first do a
+  read-only survey of the codebase so its questions are grounded in what already
+  exists, and it writes the finished document to `docs/scope/` — plus a raw
+  interview transcript alongside it for future reuse.
 
 The assistant runs on **your own Claude** (no separate LLM API key).
 
@@ -31,8 +43,8 @@ ask, e.g.:
 
 > "Help me scope a new data pipeline for MODIS fire-detection products."
 
-The agent opens the AKD Scope and Requirements Interview and walks the steps
-one question at a time.
+The agent opens the AKD Scope and Requirements Interview and walks the clusters,
+reviewing each cluster before moving on.
 
 ## Configuration
 
@@ -47,20 +59,35 @@ wire up.
 
 ```
 .claude-plugin/plugin.json     manifest
-skills/scope-interview/        the skill: SKILL.md
+skills/scope-interview/
+  SKILL.md                     the skill
+  references/                  source-workspace specs (scope, reasoning,
+                               output, guardrails, contexts, tools)
 ```
 
 ## How it works (for maintainers)
 
 - The whole agent is a single skill (`skills/scope-interview/SKILL.md`) — no
-  tools, no MCP servers. Its behavior is the prompt: strict constraints
-  (one question at a time, no design, no assuming missing info) plus a
-  mandatory ordered interview flow (Steps 0–9).
-- **Step 0** is an optional read-only codebase survey, offered only when the
-  working directory looks like a code project. Findings only *sharpen*
-  questions and produce draft answers the user confirms — code never silently
-  fills a requirement.
-- The final **Scope Requirements Document** is written to
-  `docs/scope/scope-<YYYY-MM-DD-HHMM>.md`, and the skill ensures `docs/scope/`
-  is git-ignored. On corrections it regenerates and updates the same file.
+  tools, no MCP servers. Its behavior is the prompt: a structured
+  Project Scoping Interview Agent that runs a role-gated, clustered interview
+  (~5–6 questions per cluster with a post-cluster review) and produces one
+  unified narrative scoping document. Strict guardrails keep it on-topic (no
+  science answers, no code, no recipes, jailbreak refusal/escalation) and keep
+  the human as the decision-maker.
+- **Faithful base + enhancement.** The narrative behavior faithfully follows the
+  source scoping-agent workspace export. **Codebase-aware mode** is an additive
+  Claude Code layer: an optional Step 0 read-only survey (offered only when the
+  working directory looks like a code project), and file-saving to `docs/scope/`.
+  Codebase findings only *sharpen* questions and produce draft answers the user
+  confirms — code never silently fills a requirement.
+- **Output style** is chosen at the end (Management / PM / Technical Lead /
+  Developer / SME / general), tuning tone and depth of the *single* document;
+  it defaults to the base stakeholder-friendly narrative.
+- On save, the polished document is written to
+  `docs/scope/scope-<slug>-<YYYY-MM-DD-HHMM>.md`, and the **full raw interview
+  transcript** to `docs/scope/scope-<slug>-<YYYY-MM-DD-HHMM>-raw.md` for future
+  reuse; the skill ensures `docs/scope/` is git-ignored. On corrections it
+  regenerates and updates the same files.
+- `references/` carries the source-workspace specifications (scope, reasoning,
+  output, guardrails, contexts, tools) as load-on-demand depth material.
 - Upstream source: [NASA-IMPACT/akd-scoping-agent](https://github.com/NASA-IMPACT/akd-scoping-agent).
