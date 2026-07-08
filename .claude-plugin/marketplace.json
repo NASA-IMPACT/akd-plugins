@@ -17,6 +17,12 @@
       "source": "./plugins/pds-assistant",
       "description": "Find the right NASA Planetary Data System (PDS) datasets for a planetary-science query: route to the correct PDS node, walk the live archives, and return grounded dataset identifiers and paths.",
       "version": "0.1.0"
+    },
+    {
+      "name": "scope-interview",
+      "source": "./plugins/scope-interview",
+      "description": "Strict, structured requirements-interview agent that extracts a complete Scope Requirements Document before any design or implementation. Optionally explores the project codebase and writes the doc to docs/scope/.",
+      "version": "0.1.1"
     }
   ]
 }

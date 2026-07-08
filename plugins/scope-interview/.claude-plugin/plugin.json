@@ -1,0 +1,13 @@
+{
+  "name": "scope-interview",
+  "displayName": "Scope Interview Agent",
+  "description": "Strict, structured requirements-interview agent that extracts a complete Scope Requirements Document before any design or implementation. Optionally explores the project codebase and writes the doc to docs/scope/.",
+  "version": "0.1.1",
+  "author": {
+    "name": "NASA-IMPACT",
+    "email": "np0069@uah.edu"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/NASA-IMPACT/akd-scoping-agent",
+  "repository": "NASA-IMPACT/akd-scoping-agent"
+}
