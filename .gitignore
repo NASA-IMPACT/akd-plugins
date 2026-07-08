@@ -6,3 +6,6 @@
 
 # Claude Code local settings (per-machine, not shared)
 .claude/settings.local.json
+
+# Local scratch / downloaded artifacts (not shared)
+tmp/
