@@ -6,7 +6,7 @@ A non-Astrophysics division. **Step 5 (ASCL + ADS) is skipped entirely.** ADS Ev
 
 ## Channels used
 
-1. `repository_search_tool` — Step 2 primary discovery (≥ 2 distinct queries).
+1. `repository_search_tool` — Step 2 primary discovery (≥ 2 distinct query strings; may be batched via `queries=[...]`).
 2. `sde_search_tool` — Step 3, one query. **SDE is strongest for Heliophysics** (SPASE and related NASA channels are well-indexed).
 3. `code_signals_search_tool` — Step 4, conditional.
 4. External web search — Step 6 completeness pass (max 3 queries).

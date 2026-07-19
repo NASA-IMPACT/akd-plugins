@@ -9,12 +9,13 @@ Searches NASA's Science Discovery Engine (SDE) via the unified `/api/search` end
 - **Step 3 (one query)** using the user's core scientific terms.
 - SDE is strongest for **Earth Science, Heliophysics, and Planetary Science**; **lower-yield for Astrophysics** (keep to one brief query and rely on Step 5). See `contexts/science-discovery-engine.md`.
 
-## Implementation
+## MCP server & enabled state
 
-Implemented via local script: `scripts/sde_tools.py` (`sde_search_tool`).
+- Server: `Code_Search_MCP_Server` — `https://sde-repo-search.fastmcp.app/mcp`.
+- `require_approval: "never"`
 
 ## Files
 
 - `endpoint.md` — underlying SDE endpoint.
 - `input-output.md` — params and returns.
-- `auth.md` — no token (no auth).
+- `auth.md` — MCP authorization (if provisioned).

@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "code-search": {
+      "type": "http",
+      "url": "https://sde-repo-search.fastmcp.app/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.code_search_mcp_key}"
+      }
+    },
+    "code-signal": {
+      "type": "http",
+      "url": "https://developing-purple-wallaby.fastmcp.app/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.code_signals_mcp_key}"
+      }
+    },
+    "ads-ascl": {
+      "type": "http",
+      "url": "https://ads-ascl.fastmcp.app/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.ads_ascl_mcp_key}"
+      }
+    }
+  }
+}

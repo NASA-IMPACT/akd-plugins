@@ -6,7 +6,7 @@ Astrophysics is the only SMD division that runs the full discovery pipeline incl
 
 ## Channels used
 
-1. `repository_search_tool` — Step 2 primary discovery (≥ 2 distinct queries).
+1. `repository_search_tool` — Step 2 primary discovery (≥ 2 distinct query strings; may be batched via `queries=[...]`).
 2. `sde_search_tool` — Step 3, one brief query. **SDE is low-yield for Astrophysics** (community codes are documented outside NASA institutional channels), so keep to one query and rely on Step 5.
 3. `code_signals_search_tool` — Step 4, conditional.
 4. **`ascl_search_tool` (Step 5a), `ads_search_tool` (Step 5b), `ads_links_resolver_tool` (Step 5c)** — the highest-yield astrophysics channels; ASCL is code-first with canonical URLs and ADS bibcodes.

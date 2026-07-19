@@ -8,7 +8,7 @@ The **Expected Codes checklist is generated at runtime** by the agent in Step 1 
 
 ## Systems (data sources / channels)
 
-- `science-discovery-engine.md` — NASA SDE, the shared `/api/search` backend both `sde_search_tool` and `repository_search_tool` call; documents the deliberate `min_score=0.0` behavior and per-domain strength. Applies at Steps 2–3.
+- `science-discovery-engine.md` — NASA SDE. `sde_search_tool` uses `/api/search`; `repository_search_tool` uses `/api/code/search` (default/configurable). Documents the deliberate `min_score=0.0` behavior and per-domain strength. Applies at Steps 2–3.
 - `github-metadata.md` — GitHub REST enrichment of `github.com` results and the tool-owned `reliability_score` formula; also records the "NASA-Verified" label vs. real-implementation correction. Applies at Step 2.
 - `ascl.md` — Astrophysics Source Code Library; code-first records with `site_list`, `described_in`/`used_in` (ADS URLs), `bibcode`, `used_in_count`. Astrophysics only, Step 5a.
 - `nasa-ads.md` — NASA ADS paper search and links resolver; `citation_count`, `associated_bibcodes`. Astrophysics only, Steps 5b/5c.

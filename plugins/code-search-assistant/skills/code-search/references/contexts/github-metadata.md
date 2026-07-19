@@ -2,7 +2,7 @@
 
 ## What it is
 
-For each SDE "Software and Tools" result whose URL is on `github.com`, `repository_search_tool` fetches repository metadata from the GitHub REST API (`https://api.github.com/repos/{owner}/{repo}`) using the `GITHUB_ACCESS_TOKEN` environment variable, and computes a `reliability_score`. This is enrichment layered on top of the SDE backend (see `contexts/science-discovery-engine.md`) — it is not a separate corpus. Source of truth: deployed tool behavior.
+For each repository-search result whose URL is on `github.com`, `repository_search_tool` fetches repository metadata from the GitHub REST API (`https://api.github.com/repos/{owner}/{repo}`) using the `GITHUB_ACCESS_TOKEN` environment variable, and computes a `reliability_score`. This is enrichment layered on top of the SDE backend (see `contexts/science-discovery-engine.md`) — it is not a separate corpus.
 
 ## Metadata fetched
 
@@ -24,7 +24,7 @@ The score is computed by the tool, not by the agent. The agent consumes it (and 
 
 ## Important correction (label vs. implementation)
 
-The v1 prompt labels `repository_search_tool` "NASA-Verified Repository Search." That label is preserved verbatim in `agents.md`, but the real implementation is **SDE (Software and Tools) + GitHub enrichment**, NOT a separate NASA-verified repository corpus.
+The v1 prompt labels `repository_search_tool` "NASA-Verified Repository Search." That label is preserved verbatim in `agents.md`, but the real implementation is **SDE code search + GitHub enrichment**, NOT a separate NASA-verified repository corpus.
 
 ## Related tool
 

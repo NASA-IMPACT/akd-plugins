@@ -10,7 +10,7 @@
 
 ## Per-channel query caps (verbatim, from the process)
 
-- Step 2 `repository_search_tool`: run **at least 2 distinct queries** for any scientific domain query.
+- Step 2 `repository_search_tool`: run **at least 2 distinct query strings** for any scientific domain query (may be batched into a single tool call via `queries`).
 - Step 3 `sde_search_tool`: **one** SDE query.
 - Step 5a ASCL: **Maximum 4 ASCL queries** (`rows=10` for task terms; `rows=5` for name lookups).
 - Step 5b ADS: **Maximum 4 queries, `rows=5` each**.

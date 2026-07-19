@@ -1,30 +1,24 @@
 # sde_search_tool — Input / Output
 
-Implemented by local script `scripts/sde_tools.py` (`sde_search_tool`).
+Searches NASA's Science Discovery Engine (SDE) via the unified `/api/search` endpoint to provide contextual enrichment.
 
 ## Inputs
 
 | Param | Type | Required | Default | Meaning |
 |---|---|---|---|---|
-| `query` | str | yes | — | Natural-language search query (e.g., "Mars rover spectroscopy data"). |
-| `limit` | int | no | `10` | Max results to return (1–100). |
-| `doc_type` | str \| None | no | `"Software and Tools"` | Filter by document type — `Data`, `Documentation`, `Software and Tools`, `Images`, `Missions and Instruments`. Pass `None` for no filter. |
+| `query` | str | yes | — | Natural-language search query. |
+| `limit` | int | no | 10 | Maximum number of results to return (1–100). |
+| `doc_type` | str \| None | no | None | Optional filter by document type (e.g., `Software and Tools`). |
 
-Fixed internally: `search_type="hybrid"`, `min_score=0.0`.
+Notes:
+- The tool sends **`min_score=0.0` on every request** to avoid server-side default filtering.
+- Search mode (`hybrid`/`vector`/`keyword`) and optional division scoping are instance configuration (not caller-controlled).
 
 ## Outputs
 
-Returns `{ "total_count": <int>, "results": [ … ] }`. Each result:
-
-| Field | Source | Notes |
-|---|---|---|
-| `title` | SDE `title` | Document title. |
-| `url` | SDE `url` | Document URL. |
-| `content` | SDE `full_text`/`data_product_desc`/`description` | Truncated to 1500 chars. |
-| `score` | SDE `_score` | Relevance (with `min_score=0.0`, may be low). |
-| `division` | SDE `division` | NASA SMD division. |
-| `doc_type` | SDE `document_type` | Document type. |
-| `source` | SDE `api_source` | e.g., `sde-cmr`, `sde-pds4`, `sde-web`, `sde-code`. |
+Returns an object with:
+- `results`: list of documents, each including `query` (echo), `title`, `url`, `content`, `score`, and optionally `division`, `doc_type`, `source`.
+- `extra`: tool-provided metadata (e.g., `total_count`, `requested_limit`).
 
 ## Usage note
 

@@ -1,8 +1,10 @@
 # sde_search_tool — Endpoint
 
-## Implementation
+## MCP server
 
-Local script function: `scripts/sde_tools.py` (`sde_search_tool`).
+- Name: `Code_Search_MCP_Server`
+- URL: `https://sde-repo-search.fastmcp.app/mcp`
+- `require_approval: "never"`
 
 ## Underlying SDE endpoint
 

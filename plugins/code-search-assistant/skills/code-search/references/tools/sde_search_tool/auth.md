@@ -1,8 +1,9 @@
 # sde_search_tool — Auth
 
-## Authorization
+## MCP authorization (secret — reference only)
 
-`sde_search_tool` is implemented as a local script function and does not use an MCP bearer token.
+- The MCP connection may use a bearer `authorization` token supplied in the runtime client config.
+- **Treat this token as a secret.** The literal value must not be stored in this workspace.
 
 ## Underlying SDE endpoint
 

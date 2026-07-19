@@ -7,5 +7,28 @@
     "name": "Pushwitha Krishnappa",
     "email": "pk0055@uah.edu"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "userConfig": {
+    "code_search_mcp_key": {
+      "type": "string",
+      "title": "Code Search MCP token",
+      "description": "FastMCP token (fmcp_...) for the Code_Search_MCP_Server (sde-repo-search), which provides repository_search_tool and sde_search_tool. This server requires a token, so it is needed for the primary discovery tools to work.",
+      "sensitive": true,
+      "required": false
+    },
+    "code_signals_mcp_key": {
+      "type": "string",
+      "title": "Code Signals MCP token",
+      "description": "FastMCP token (fmcp_...) for the Code_Signal server, which provides code_signals_search_tool (static code inspection). Needed for that tool; the rest of the pipeline works without it.",
+      "sensitive": true,
+      "required": false
+    },
+    "ads_ascl_mcp_key": {
+      "type": "string",
+      "title": "ADS / ASCL MCP token",
+      "description": "FastMCP token (fmcp_...) for the ads-ascl server, which provides ascl_search_tool, ads_search_tool, and ads_links_resolver_tool (the Astrophysics citation channel). Needed for Astrophysics citation ranking; non-Astrophysics queries work without it.",
+      "sensitive": true,
+      "required": false
+    }
+  }
 }

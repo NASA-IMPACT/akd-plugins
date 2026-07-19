@@ -4,11 +4,16 @@
 
 The Science Discovery Engine (SDE) is NASA's centralized search platform that indexes scientific data, publications, and resources from multiple NASA data sources — including CMR (Earth observation), PDS (planetary science), SPASE (heliophysics), GCN (astronomy), code repositories, and documentation. It exposes a unified `/api/search` endpoint providing cross-source vector, keyword, and hybrid (vector + keyword) semantic search over all indexed NASA content.
 
-**SDE is the shared backend for BOTH SDE-backed tools.** `sde_search_tool` and `repository_search_tool` call the SAME SDE endpoint — `https://dyejsbdumgpqz.cloudfront.net/api/search`, `search_type="hybrid"`. `repository_search_tool` additionally filters to `document_type=["Software and Tools"]` and enriches GitHub results (see `contexts/github-metadata.md`). Source of truth: deployed tool behavior.
+**SDE is the shared backend for BOTH SDE-backed tools.**
+
+- `sde_search_tool` calls the unified SDE endpoint: `https://dyejsbdumgpqz.cloudfront.net/api/search`.
+- `repository_search_tool` calls the SDE code-search endpoint: `https://dyejsbdumgpqz.cloudfront.net/api/code/search` (default; configurable).
+
+`repository_search_tool` also enriches GitHub results (see `contexts/github-metadata.md`).
 
 ## Key behavior: min_score = 0.0 (threshold 0, deliberate)
 
-Both SDE-backed searches send `min_score=0.0` (relevance threshold zero) in the request payload. **This is deliberate — with a non-zero threshold, weak queries return zero results.** Preserving `min_score=0.0` is the reason the pydantic tool functions exist rather than relying on default MCP tool behavior. Consequence for the agent: SDE results can include low-relevance documents; use the returned `score` (and, for repositories, `reliability_score`) to weigh candidates rather than assuming everything returned is on-topic.
+Both SDE-backed searches send `min_score=0.0` (relevance threshold zero) in the request payload. **This is deliberate — if `min_score` is omitted, the server applies a higher default threshold that can silently drop most documents.** Consequence for the agent: SDE results can include low-relevance documents; use the returned `score` (and, for repositories, `reliability_score`) to weigh candidates rather than assuming everything returned is on-topic.
 
 ## Role in the pipeline
 

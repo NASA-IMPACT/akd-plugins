@@ -24,7 +24,7 @@ The agent runs a single coordinated pipeline that separates a **discovery phase*
 
 ### Step 2 — Primary Discovery (Multi-Query)
 - Query `repository_search_tool` with the user's original terms.
-- Run **at least 2 distinct queries** for any scientific domain query. If initial results are sparse or known checklist codes are missing, add queries for synonyms, specific code names from the checklist, and broader category terms.
+- Run **at least 2 distinct query strings** for any scientific domain query. These may be **batched into a single tool call** via `repository_search_tool(queries=[...])`. If initial results are sparse or known checklist codes are missing, add queries for synonyms, specific code names from the checklist, and broader category terms.
 - Merge and deduplicate results.
 
 ### Step 3 — Context Enrichment via SDE
@@ -107,7 +107,7 @@ Compose the Markdown output per the format in `output.md`. Surface per-repositor
 
 ## 4. Tool-Selection Strategy (by step and domain)
 
-- `repository_search_tool` — primary discovery, every domain, Step 2 (≥ 2 distinct queries).
+- `repository_search_tool` — primary discovery, every domain, Step 2 (≥ 2 distinct query strings; may be batched via `queries=[...]`).
 - `sde_search_tool` — one enrichment query, Step 3; strongest for Earth Science, Heliophysics, Planetary Science; low-yield for Astrophysics.
 - `code_signals_search_tool` — conditional, Step 4, only when README + SDE context are insufficient.
 - `ascl_search_tool`, `ads_search_tool`, `ads_links_resolver_tool` — Astrophysics only, Step 5 (max 4 ASCL, max 4 ADS, max 4 resolver uses).
