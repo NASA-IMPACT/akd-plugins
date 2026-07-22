@@ -14,7 +14,7 @@
       "title": "Code Search MCP token",
       "description": "FastMCP token (fmcp_...) for the Code_Search_MCP_Server (sde-repo-search), which provides repository_search_tool and sde_search_tool. This server requires a token, so it is needed for the primary discovery tools to work.",
       "sensitive": true,
-      "required": false
+      "required": true
     },
     "code_signals_mcp_key": {
       "type": "string",
