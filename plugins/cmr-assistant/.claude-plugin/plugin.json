@@ -1,0 +1,11 @@
+{
+  "name": "cmr-assistant",
+  "displayName": "CMR Data Search Assistant",
+  "description": "Discover and relevance-rank NASA Earthdata (CMR) collections for an Earth science question: normalize terms to GCMD keywords, search collections, verify granule availability, and return Concept IDs with transparent, reproducible provenance. Read-only and human-in-the-loop — never recommends, endorses, or downloads.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Pushwitha Krishnappa",
+    "email": "pk0055@uah.edu"
+  },
+  "license": "Apache-2.0"
+}
