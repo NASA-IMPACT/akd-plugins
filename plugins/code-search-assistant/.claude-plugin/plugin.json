@@ -1,0 +1,34 @@
+{
+  "name": "code-search-assistant",
+  "displayName": "Code Search Assistant",
+  "description": "Discover and comparatively rank publicly available scientific code repositories for a research or technical task across NASA SMD domains (Astrophysics, Earth Science, Heliophysics, Planetary Science, Biological & Physical Sciences). Read-only and human-in-the-loop: returns up to 6 grounded candidates with reliability signals, or abstains when nothing fits.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Pushwitha Krishnappa",
+    "email": "pk0055@uah.edu"
+  },
+  "license": "Apache-2.0",
+  "userConfig": {
+    "code_search_mcp_key": {
+      "type": "string",
+      "title": "Code Search MCP token",
+      "description": "FastMCP token (fmcp_...) for the Code_Search_MCP_Server (sde-repo-search), which provides repository_search_tool and sde_search_tool. This server requires a token, so it is needed for the primary discovery tools to work.",
+      "sensitive": true,
+      "required": true
+    },
+    "code_signals_mcp_key": {
+      "type": "string",
+      "title": "Code Signals MCP token",
+      "description": "FastMCP token (fmcp_...) for the Code_Signal server, which provides code_signals_search_tool (static code inspection). Needed for that tool; the rest of the pipeline works without it.",
+      "sensitive": true,
+      "required": false
+    },
+    "ads_ascl_mcp_key": {
+      "type": "string",
+      "title": "ADS / ASCL MCP token",
+      "description": "FastMCP token (fmcp_...) for the ads-ascl server, which provides ascl_search_tool, ads_search_tool, and ads_links_resolver_tool (the Astrophysics citation channel). Needed for Astrophysics citation ranking; non-Astrophysics queries work without it.",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}
