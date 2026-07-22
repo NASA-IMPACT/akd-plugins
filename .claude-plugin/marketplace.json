@@ -23,6 +23,12 @@
       "source": "./plugins/code-search-assistant",
       "description": "Discover and comparatively rank public scientific code repositories for a research or technical task across NASA SMD domains — read-only, with reliability signals; returns up to 6 grounded candidates or abstains.",
       "version": "0.1.0"
+    },
+    {
+      "name": "scope-interview",
+      "source": "./plugins/scope-interview",
+      "description": "Strict, structured requirements-interview agent that extracts a complete Scope Requirements Document before any design or implementation. Optionally explores the project codebase and writes the doc to docs/scope/.",
+      "version": "0.1.1"
     }
   ]
 }
