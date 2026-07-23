@@ -60,17 +60,20 @@ instrument, apply it as a hard filter.
 - `keyword` — free-text search across collection metadata.
 - `concept_id` — fetch a specific concept by ID.
 - `provider` — filter by data provider.
-- `sort_key` — ranking control (see below).
-- `page_size` (default 10, max 2000), `page_num` (1-based) — paging.
+- `sort_key` — REST-only ranking control (**not available on the MCP tool** — see Ranking below).
+- `page_size`, `page_num` (1-based) — paging. **The MCP tool caps `page_size` at 50** (the raw
+  REST API alone allows up to 2000).
 
 **Collection constraints**
 - `short_name`, `version` — identify a known collection.
 - `temporal` — `YYYY-MM-DDTHH:mm:ssZ,YYYY-MM-DDTHH:mm:ssZ` (apply only after user confirmation).
 - `platform`, `instrument` — GCMD-normalized hard filters.
-- `science_keywords` — the GCMD Science Keyword hierarchy. Normalize the user's
+- `science_keywords` — the GCMD Science Keyword hierarchy. **REST-only structured filter — the
+  MCP tool has no such parameter; do not attempt it.** Instead: normalize the user's
   phenomena/variables against the bundled vocabulary snapshot
-  ([`../resources/gcmd-science-keywords.json`](../resources/gcmd-science-keywords.json)) before
-  using this filter (see `gcmd-keywords.md`).
+  ([`../resources/gcmd-science-keywords.json`](../resources/gcmd-science-keywords.json)) and pass
+  the resolved prefLabels through the tool's free-text `keyword` parameter (see
+  `gcmd-keywords.md`).
 - `project` — project/mission name.
 - `processing_level` — L0, L1A, L1B, L2, L3, L4.
 - `data_center`, `archive_center` — organizational filters.
@@ -118,14 +121,16 @@ and instruments · ProcessingLevelId · related URLs (documentation / DAAC landi
 
 ## Ranking
 
-Request ordering from CMR via `sort_key`. Primary signal: **metadata relevance** to the science
+The MCP tool exposes **no `sort_key`** — the agent orders the returned collections **itself**
+(`sort_key` is a REST-API-only feature). Primary signal: **metadata relevance** to the science
 query. Usage/popularity is allowed only as a **secondary tie-breaker**, never overriding
 relevance (see `../reasoning.md`, `../output.md`, and
 `../guardrails/ranking-relevance-primary.md`).
 
 ## Limits & performance
 
-- `page_size` up to 2000; **paginate** rather than pulling very large result sets.
+- `page_size` up to **50 via the MCP tool** (REST alone allows 2000); **paginate** rather than
+  pulling very large result sets.
 - **URL length ~6,000 chars max** — combining many fields with many values overflows it;
   construct queries conservatively and page.
 - Request timeout ~180s (internal query timeout ~170s).

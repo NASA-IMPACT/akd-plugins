@@ -52,8 +52,10 @@ skills/cmr-data-search/         the skill: SKILL.md + references/ (contexts, gua
 ## For maintainers
 
 - **The `cmr` MCP server** (key `cmr` in `.mcp.json`; the server reports itself as
-  "CMR Data Server") is public NASA CMR — no `Authorization` header, no `userConfig`. The URL
-  lives only in `.mcp.json` (deployment config), never in the skill markdown.
+  "CMR Data Server") is public NASA CMR — no `Authorization` header, no `userConfig`.
+  `.mcp.json` is the **live wiring**; the reference docs also record the server URL as
+  documentation (`references/tools/index.md`, `references/tools/cmr_search_tool/{index,endpoint}.md`),
+  so a server migration must update `.mcp.json` **plus** those three files.
 - **Three tools, called directly:** `search_collections` (collection discovery),
   `get_granules` (granule verification after a collection is selected — never for download),
   and `get_collection_metadata` (verbatim documentation). The CARE artifact refers to these

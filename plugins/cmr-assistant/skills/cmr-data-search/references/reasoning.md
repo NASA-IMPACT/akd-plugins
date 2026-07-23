@@ -31,7 +31,10 @@ limits are in `guardrails/`. Follow the loop in order; do not skip steps.
    candidate datasets.
 7. **Rank.** Primary signal: metadata relevance to the science query. Secondary (tie-breaker
    only): usage/popularity (`guardrails/ranking-relevance-primary.md`). Order the returned
-   collections **yourself** — the tool exposes no server-side `sort_key`.
+   collections **yourself** — the tool exposes no server-side `sort_key`. After shortlisting,
+   call `get_collection_metadata` for each candidate: `search_collections` returns lightweight
+   records only, and the output's per-dataset fields (variables, spatial coverage, processing
+   level) come from the full metadata; anything still missing is **unknown**, never inferred.
 8. **Explain.** Explain why each dataset appears, its relevance, and its gaps. No
    recommendations or endorsements.
 

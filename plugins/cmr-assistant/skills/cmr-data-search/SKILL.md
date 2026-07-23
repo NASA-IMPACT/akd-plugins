@@ -78,6 +78,12 @@ authentication). Call them by name; never invent parameters or tools beyond thes
 | `get_granules` | **Granule verification only**, after the user selects a collection — confirm files actually exist for the confirmed spatial/temporal bounds. Never for downloading. | `collection_concept_id`, `temporal`, `bounding_box`, `point`, `online_only`, `downloadable`, `page_size`, `page_num` |
 | `get_collection_metadata` | Surface a collection's documentation **verbatim** (variables, quality flags, limitations) so the user can verify fit. | `concept_id` |
 
+`search_collections` returns **lightweight** records only (`concept_id`, `short_name`,
+`version`, `entry_title`, `provider`, `summary`, time range) — it does **not** include the
+variables, spatial coverage, or processing level the output format requires. For every
+**shortlisted** candidate, call `get_collection_metadata` to populate those per-dataset fields;
+anything still absent is reported as **unknown**, never inferred.
+
 Apply **only user-confirmed** `temporal`, `bounding_box`, and keyword/variable values — never
 silent defaults. Record every tool call, its parameters, and UTC timestamp in the Search
 Reproducibility Log (see OUTPUT FORMAT).

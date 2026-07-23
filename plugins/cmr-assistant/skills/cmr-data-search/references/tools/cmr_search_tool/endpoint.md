@@ -25,10 +25,12 @@ workspace):
 
 ## Underlying CMR endpoints
 
-- Base URL: `https://cmr.uat.earthdata.nasa.gov/search/`
+- Base URL: `https://cmr.earthdata.nasa.gov/search/` — **production** CMR. (The live server
+  queries production; Concept IDs it returns do not resolve on UAT.)
 - **Collections** (primary): `GET /search/collections` — every search runs here.
 - **Granules** (after collection selection only): `GET /search/granules`.
-- Method: `GET`; results paged via `page_size` (default 10, max 2000) and `page_num`.
+- Method: `GET`; results paged via `page_size` and `page_num`. **The MCP tools cap `page_size`
+  at 50** — the raw REST API's 2000 limit is not reachable through the tools.
 
 ## Response formats
 
