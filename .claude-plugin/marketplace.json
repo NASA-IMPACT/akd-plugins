@@ -35,6 +35,12 @@
       "source": "./plugins/cmr-assistant",
       "description": "Discover and relevance-rank NASA Earthdata (CMR) collections for an Earth science question: normalize to GCMD keywords, search collections, verify granule availability, and return Concept IDs with reproducible provenance. Read-only and human-in-the-loop — never recommends, endorses, or downloads.",
       "version": "0.1.0"
+    },
+    {
+      "name": "astro-data-search-assistant",
+      "source": "./plugins/astro-data-search-assistant",
+      "description": "Plan and run a rigorous, read-only search across public astrophysics archives (NASA, ESA, CDS, community) for an astronomy data-discovery question, and return a deterministically-ordered list of candidate datasets with provenance and caveats. Human-in-the-loop — never downloads or endorses a \"best\" dataset.",
+      "version": "0.1.0"
     }
   ]
 }
