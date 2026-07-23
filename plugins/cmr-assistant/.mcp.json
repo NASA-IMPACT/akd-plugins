@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cmr": {
+      "type": "http",
+      "url": "https://w4hu71445m.execute-api.us-east-1.amazonaws.com/mcp/cmr/mcp/"
+    }
+  }
+}
