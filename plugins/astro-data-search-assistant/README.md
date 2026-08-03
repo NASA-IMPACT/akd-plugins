@@ -29,14 +29,19 @@ On enable, Claude Code prompts you for the token (see **Configuration**). Then j
 
 ## Configuration
 
+Both values are prompted at enable time and stored in your OS keychain — **neither is hard‑coded
+in the plugin**, so you can point it at your own deployment:
+
 | Prompt | Backs | Required |
 |---|---|---|
-| **Astroquery MCP token** (`astroquery_mcp_key`) | the `astroquery-mcp` server — every search tool | **Yes** |
+| **Astroquery MCP server URL** (`astroquery_mcp_url`) | the `astroquery-mcp` HTTP endpoint | **Yes** |
+| **Astroquery MCP token** (`astroquery_mcp_key`) | bearer auth for that server — every search tool | **Yes** |
 
-The `astroquery-mcp` server is **token‑protected** (an unauthenticated request returns HTTP 401),
-so this token is **required** — without it no search works. It's a FastMCP project token
-(`fmcp_…`), requested interactively when you enable the plugin and stored in your OS keychain;
-it is **not** committed to the plugin files.
+- **URL** — the `astroquery-mcp` HTTP endpoint, e.g. `https://coming-gray-slug.fastmcp.app/mcp`. It's
+  a plain URL (not a secret); supply the endpoint of the deployment you want to use.
+- **Token** — the `astroquery-mcp` server is **token‑protected** (an unauthenticated request returns
+  HTTP 401), so this token is **required** — without it no search works. It's a FastMCP project token
+  (`fmcp_…`), stored in your OS keychain; it is **not** committed to the plugin files.
 
 (Downstream service credentials — e.g. the ADS `API_DEV_KEY`, MAST `MAST_TOKEN` — are
 **server‑side** environment variables on the astroquery‑mcp deployment, not client config. Most
@@ -45,7 +50,8 @@ public NASA search works without them; ADS literature search needs the ADS key s
 ## Prerequisites
 
 - **Claude Code** (this is a Claude Code plugin).
-- A **FastMCP token** for the `astroquery-mcp` server (entered at enable time).
+- The **`astroquery-mcp` server URL** and a **FastMCP token** for it (both entered at enable time —
+  see Configuration).
 
 ## Troubleshooting
 
@@ -73,10 +79,12 @@ skills/astro-data-search/       the skill: SKILL.md + references/ (contexts, gua
 
 ## For maintainers
 
-- **One MCP server, token‑gated:** `astroquery-mcp`
-  (`https://coming-gray-slug.fastmcp.app/mcp`, repo `igaurab/astroquery-mcp`). Auth is wired as
-  `headers.Authorization: Bearer ${user_config.astroquery_mcp_key}`; the token is `userConfig`,
-  never committed. Because it's the single essential token, it is `required: true`.
+- **One MCP server, token‑gated:** `astroquery-mcp` (repo `igaurab/astroquery-mcp`). Both the
+  **URL and the token come from `userConfig`** (`astroquery_mcp_url`, `astroquery_mcp_key`), so
+  `.mcp.json` hard‑codes neither — `url` is `${user_config.astroquery_mcp_url}` and auth is
+  `headers.Authorization: Bearer ${user_config.astroquery_mcp_key}`. Both are `required: true`
+  (the server 401s unauthenticated, and it needs a URL to reach); the token is `sensitive: true`,
+  the URL is not.
 - **Seven tools, introspection‑based** (not one per archive): `astroquery_list_modules`,
   `astroquery_list_functions`, `astroquery_get_function_info`, `astroquery_execute` (the
   workhorse, over 14 astroquery modules), `astroquery_check_auth`, `ads_query_compact`,

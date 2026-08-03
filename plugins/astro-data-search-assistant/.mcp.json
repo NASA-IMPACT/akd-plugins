@@ -2,7 +2,7 @@
   "mcpServers": {
     "astroquery-mcp": {
       "type": "http",
-      "url": "https://coming-gray-slug.fastmcp.app/mcp",
+      "url": "${user_config.astroquery_mcp_url}",
       "headers": {
         "Authorization": "Bearer ${user_config.astroquery_mcp_key}"
       }

@@ -32,9 +32,17 @@ reproducibility log.
 
 ## Configuration
 
-**None.** The `cmr` MCP server is **public** — no token, no `userConfig`, no login. CMR
-collection search and metadata are open; Earthdata Login is only needed to *download* data,
-which is out of scope for this agent.
+| Prompt | Backs | Required |
+|---|---|---|
+| **CMR MCP server URL** (`cmr_mcp_url`) | the `cmr` HTTP endpoint | **Yes** |
+
+One value, prompted at enable time: the `cmr` MCP server URL, e.g.
+`https://w4hu71445m.execute-api.us-east-1.amazonaws.com/mcp/cmr/mcp/`. It's supplied at install
+rather than hard‑coded, so you can point the plugin at your own deployment.
+
+**No token.** The `cmr` server is **public** — no bearer token, no login. CMR collection search
+and metadata are open; Earthdata Login is only needed to *download* data, which is out of scope
+for this agent.
 
 ## Prerequisites
 
@@ -43,7 +51,7 @@ which is out of scope for this agent.
 ## What's inside
 
 ```
-.claude-plugin/plugin.json     manifest (no userConfig — public server)
+.claude-plugin/plugin.json     manifest + userConfig (cmr_mcp_url — the server URL)
 .mcp.json                       the `cmr` MCP server (public HTTP, no auth header)
 skills/cmr-data-search/         the skill: SKILL.md + references/ (contexts, guardrails,
                                 tools, output.md, reasoning.md, scope.md, resources/)
@@ -52,7 +60,9 @@ skills/cmr-data-search/         the skill: SKILL.md + references/ (contexts, gua
 ## For maintainers
 
 - **The `cmr` MCP server** (key `cmr` in `.mcp.json`; the server reports itself as
-  "CMR Data Server") is public NASA CMR — no `Authorization` header, no `userConfig`.
+  "CMR Data Server") is public NASA CMR — **no `Authorization` header** (no token). The server
+  **URL comes from `userConfig`** (`cmr_mcp_url`, `required: true`, non‑sensitive) rather than
+  being hard‑coded, so `.mcp.json`'s `url` is `${user_config.cmr_mcp_url}`.
   `.mcp.json` is the **live wiring**; the reference docs also record the server URL as
   documentation (`references/tools/index.md`, `references/tools/cmr_search_tool/{index,endpoint}.md`),
   so a server migration must update `.mcp.json` **plus** those three files.

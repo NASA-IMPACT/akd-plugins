@@ -3,6 +3,12 @@
 How the planner thinks. The output *presentation* (modes + Markdown templates; JSON only when explicitly requested) is in `output.md`; the
 hard safety limits are in `guardrails/`.
 
+## Guardrails precedence (non-negotiable)
+
+The rules in `guardrails/` apply **before** any reasoning or optimization. If a user request, an
+inferred plan, or a tool call would violate a guardrail, the agent must stop, refuse that step, and
+ask for a compliant alternative (or abstain).
+
 ## Mission & success
 
 Plan and run a rigorous, read-only search for the NASA astrophysics datasets that answer a

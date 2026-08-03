@@ -2,10 +2,19 @@
   "name": "cmr-assistant",
   "displayName": "CMR Data Search Assistant",
   "description": "Discover and relevance-rank NASA Earthdata (CMR) collections for an Earth science question: normalize terms to GCMD keywords, search collections, verify granule availability, and return Concept IDs with transparent, reproducible provenance. Read-only and human-in-the-loop — never recommends, endorses, or downloads.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Pushwitha Krishnappa",
     "email": "pk0055@uah.edu"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "userConfig": {
+    "cmr_mcp_url": {
+      "type": "string",
+      "title": "CMR MCP server URL",
+      "description": "HTTP endpoint of the CMR Data Server to use (e.g. https://w4hu71445m.execute-api.us-east-1.amazonaws.com/mcp/cmr/mcp/). Provided at install rather than hard-coded, so you can point the plugin at your own deployment. The server is public — no token needed.",
+      "sensitive": false,
+      "required": true
+    }
+  }
 }
