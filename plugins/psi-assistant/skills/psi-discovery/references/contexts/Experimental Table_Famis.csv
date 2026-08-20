@@ -1,0 +1,20 @@
+Flight Cartridge ID,Sample #,Matrix Composition,Particle Type,Particle Volume Percent,Particle Diameter micrometer,Processing Temperature C,Hold Time minutes,Cooling Rate
+C1,1,Zr48Cu47.5Al4Co0.5,W,30,25 - 36,1200,120,1200 C to 25 C  as rapidly as possible
+C1,2,Zr48Cu47.5Al4Co0.5,W,30,140 - 150,1200,120,1200 C to 25 C  as rapidly as possible
+C1,3,Vitreloy 106,W,30,25 - 36,1200,120,1200 C to 25 C  as rapidly as possible
+C1,4,Vitreloy 106,W,30,25 - 36,1200,120,1200 C to 25 C  as rapidly as possible
+C1,5,Vitreloy 106,W,30,140 - 150,1200,120,1200 C to 25 C  as rapidly as possible
+C1,6,Vitreloy 106,W,30,140 - 150,1200,120,1200 C to 25 C  as rapidly as possible
+,,,,,,,,
+C2,7,Zr48Cu47.5Al4Co0.5,W,5,140 - 150,1200,120,1200 C to 25 C  as rapidly as possible
+C2,8,Vitreloy 106,W,5,140 - 150,1200,120,1200 C to 25 C  as rapidly as possible
+C2,9,Zr48Cu47.5Al4Co0.5,W,15,25 - 36,1200,120,1200 C to 25 C  as rapidly as possible
+C2,10,Zr48Cu47.5Al4Co0.5,W,15,140 - 150,1200,120,1200 C to 25 C  as rapidly as possible
+C2,11,Vitreloy 106,W,15,25 - 36,1200,120,1200 C to 25 C  as rapidly as possible
+C2,12,Vitreloy 106,W,15,140 - 150,1200,120,1200 C to 25 C  as rapidly as possible
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
