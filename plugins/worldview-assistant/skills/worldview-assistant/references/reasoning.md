@@ -30,6 +30,16 @@ If CMR-first discovery does not yield a good match (no suitable collections, or 
 - At the same time, present what is available via the fallback path:
   - candidate layers from `worldview_catalog` and/or `search_worldview_layers`.
 
+## Comparison handling strategy
+- If the user asks to compare two different layers, plan to set `time` and `compare_time` to the same UTC date so both sides align.
+- Choose the compare date as:
+  - the user-provided date (if any), otherwise
+  - the most recent common available UTC date across the compared layers.
+- Before generating a compare permalink, validate date availability per layer via `get_granules`:
+  - “available on date D” means at least one granule exists within UTC date D (00:00Z–23:59Z).
+  - If availability differs between layers, present the mismatch plainly and propose recent common dates with data for both; ask the user to choose.
+- Use different dates on A vs B only when the user explicitly asks for different dates, or when comparing the same layer across time using exactly the dates they provided.
+
 ## TBD
 - Tool selection in ambiguous cases (multiple possible collections/layers)
 - Conflict handling and uncertainty disclosure behaviors beyond output-format rules

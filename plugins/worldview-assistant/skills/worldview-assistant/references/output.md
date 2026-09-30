@@ -11,9 +11,7 @@
   - Status: confirmed
 
 - **Structured backend schema visibility**: Kept internal by default.
-  - Only show the structured schema:
-    - after the final output (when the Worldview permalink is generated), and/or
-    - if the user explicitly asks for technical/structured output.
+  - Only show the structured schema when the user explicitly requests it (e.g., asks to show details / technical metadata / provenance / structured output).
   - Source: SME chat
   - Status: confirmed
 
@@ -105,22 +103,26 @@ Notes:
 
 ### User-facing narrative (always visible)
 
-Narrative should:
-- be adapted to user level
-- avoid uncited interpretive/causal claims
-- include a non-authoritative disclaimer
-- offer only **relevant/actionable** optional actions (not a fixed always-on list), such as:
-  - “Would you like to see dataset details and citation information?”
-  - “Show technical metadata”
-  - “Download dataset link” (only when a dataset/collection has been identified)
+Keep the default user-visible response short and non-redundant:
+- 1–2 sentences describing what the link shows (layer(s), date/time, and region/area-of-interest)
+- the Worldview link
+- one line with the single most important caveat (choose the caveat most directly tied to the user’s stated goal)
+- one line non-authoritative disclaimer (no policy guidance implied)
+- a closing hint: *Type **show details** for dataset IDs, uncertainty, and provenance.*
 
-### Optional expansions (user-triggered)
+Do not:
+- repeat caveats or the disclaimer
+- list configuration that is already visible in the Worldview link
 
-When requested by the user (or in Advanced mode if desired), provide:
-- citations/provenance fields (dataset name, DOI/persistent ID, satellite/instrument, processing level, timestamp, catalog link, version)
-- structured schema dump (the internal Markdown) — typically provided alongside the final permalink
+### Internal structured detail (Markdown) — user-triggered
+
+The agent must always produce the structured detail internally as deterministic Markdown (per the schema in this document), but keep it hidden by default.
+
+Show the full detail only when the user explicitly requests details/technical output (e.g., “show details”, “show technical metadata”, “show provenance”, “show structured output”). When shown, include:
+- the full narrative (including caveats and uncertainty details)
+- citations/provenance fields (if available)
+- the complete structured schema dump (the internal Markdown)
 
 ## TBD
-- Whether to expose machine-readable provenance automatically in Advanced mode vs only on request.
 - Exact stable fields to rely on from CMR/search_worldview_layers/SDE/EONET tool responses.
 - Whether to include explicit tool call logs in the internal schema.

@@ -58,6 +58,10 @@ Charting mode
 - `layers[*].id` must be a GIBS/Worldview layer id.
 - If `compare_active` is not null: `compare_layers` required.
 - If `chart_active` is true: `chart_layer` required.
+- Agent-side requirements for compare links:
+  - When generating a compare permalink (`compare_active` not null), the agent should always pass `time` explicitly (do not rely on the tool default of yesterday UTC).
+  - When comparing different layers (A vs B), the agent should set `compare_time` equal to `time` so both sides render the same UTC date.
+  - Different values for `time` vs `compare_time` should be used only when the user explicitly asks for different dates, or when comparing the same layer across time using exactly the dates they provided.
 
 ## Failure modes and recovery guidance
 TBD (confirm): expected error behavior for invalid layer ids, invalid bbox, invalid date formats.
