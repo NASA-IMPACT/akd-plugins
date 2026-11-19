@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "psi-mcp": {
+      "type": "http",
+      "url": "${user_config.psi_mcp_url}",
+      "headers": {
+        "Authorization": "Bearer ${user_config.psi_mcp_key}"
+      }
+    }
+  }
+}

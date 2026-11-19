@@ -1,0 +1,123 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	PSI	EFO
+Term Source File	https://psi.nasa.gov/	http://data.bioontology.org/ontologies/EFO
+Term Source Version	1.0	132
+Term Source Description	User defined terms	Experimental Factor Ontology
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	PSI-111
+Study Title	SUBSA Brazing of Aluminum Alloys IN Space
+Study Description	
+Study Submission Date	30-Nov-2022
+Study Public Release Date	30-Nov-2022
+Study File Name	s_PSI-111.txt
+Comment[Acknowledgments]	
+Comment[Approach]	Before being assembled into the ampoule, the samples were always ultrasonically cleaned in the sequence of (i) soapy water, (ii) water, (iii) 190 proof ethanol, and then dried in air or a compressed air. A double nitrogen purge was done before sealing the ampoule. Three configurations of the Al alloy filler and corresponding substrates were considered as relevant for the intended study: (i) HOLE, (ii) PIN and (iii) Hollow Pin. Solidification Using a Baffle in Sealed Ampoules” (SUBSA) furnace, which was designed for operation in the ISS’s Microgravity Science Glovebox (MSG) was used for this investigation. All samples were placed in the isothermal region of the furnace instrumented with thermocouples. The furnace was heated to the dwell temperature (600 - 605 °C ± 2K) at a rate of 5 K/minute (optimal 10K/minute). A dwell time was maintained for completion of capillary flow and establishing of the equilibrium meniscus shape. Subsequent cooling of the samples was performed at the maximum cooling rate allowed by the facility. Capillary topography identification and microstructure evaluation was performed on all samples.
+Comment[DOI]	10.60555/g6v6-rx24
+Comment[Data Source Accession]	
+Comment[Data Source Link]	
+Comment[Experiment Hardware]	Solidification Using a Baffle in Sealed Ampoules (SUBSA) furnace
+Comment[Experiment Hardware Link]	https://arc.aiaa.org/doi/10.2514/6.2003-1362
+Comment[Flight Platform]	ISS
+Comment[Funding]	NASA
+Comment[Hypothesis]	A series of space (ISS) and terrestrial experiments, integrated with modeling and analysis are expected to answer the following practical and fundamental questions: (1) How can the absence of gravity and dominance of capillary forces be take advantage of in transporting the molten braze? (2) Which brazing alloy and the brazing technique will enable strong and efficient bonding of selected proxies of structural elements and facilitate a repair. That is, can brazing be done in space and/or on board of space vehicles by using flux-less braze? Specifically: A comparison between flux and flux-less brazing under space and terrestrial conditions can answer underlying scientific questions related to molten metal flow kinetics, specifically wetting and spreading of liquid clad/filler over topographically modified surfaces.
+Comment[Identifiers]	
+Comment[Investigation Acronym]	BRAINS
+Comment[Investigation End Date]	30-Nov-2022
+Comment[Investigation Start Date]	04-Nov-2016
+Comment[Managing NASA Center]	Marshall Space Flight Center (MSFC)
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Objective]	The primary scientific goal of the proposed  terrestrial and planned microgravity molten metal  capillary flow experiments is to better understand the physics of the flow of molten metals over the topographically modified surfaces (e.g., filling in the holes, flow over sharp edges and/or flow over surfaces having variable curvatures). By performing capillary flow tests both on Earth and in a microgravity environment, the effects of microgravity on the kinetics of the larger masses of melt flow, and ultimate equilibrium shape of the meniscus will be closely examined. The objective of the microgravity experiments is to provide benchmark data against which theoretical models and computer simulations can be tested. The BRAINS project’s primary pragmatic/engineering obective is that a capillary flow of braze under microgravity conditions would enable a repair or bonding of larger and/or more irregular mating surfaces defects, compared to the terrestrial conditions. This would be important for future development of advanced brazing techniques with applications to both damage repair and construction in space.
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Microgravity Investigation
+Comment[Proposal Title]	
+Comment[Research Area]	Materials Science
+Comment[Research Impacts]	A brazing process may be used to mitigate the consequences of high velocity micro meteoroids’ and/or space debris’ impacts, and possible catastrophic penetration of aluminum man-made objects in space. Second, construction in space would necessitate joining complex assemblies, e.g., habitat systems, with brazing being one meaningful manufacturing option of permanent bonding. Validation fundamental models including phase field models will allow prediction of terrestrial brazing quality.
+Comment[Space Program]	National Aeronautics and Space Administration (NASA)
+Comment[Study Grant Number]	
+Comment[SubResearch Area]	Brazing, Capillary Forces
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Brazing	Aluminum	Microgravity	Capillary Flow	Buoyancy	Wetting
+Study Design Type Term Accession Number	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/
+Study Design Type Term Source REF	PSI	PSI	PSI	PSI	PSI	PSI
+STUDY PUBLICATIONS
+Study PubMed ID																																							
+Study Publication DOI				10.1063/5.0123707	10.1063/5.0003586	10.1007/s11041-020-00591-4	10.1007/s10853-020-05689-x	10.1063/5.0039718		10.2298/tam170803009d	10.3390/math8060899			10.13023/etd.2020.273	10.13023/etd.2020.168	10.1016/j.jcrysgro.2019.125287	10.26628/wtr.v91i9.1072					10.31399/asm.hb.v02a.a0006529					10.2298/tam170803009d			10.7273/000003156	10.7273/000003360	10.7273/000003131	10.1007/s12217-022-09973-0	10.1016/j.ijsolstr.2022.111440		10.1063/5.0123707	10.1016/j.colsurfa.2022.130400	10.1016/j.jmapro.2023.06.006	
+Study Publication Author List	K Lazaridis, Y Wu, SD Mesarovic, DP Sekulic	Y Wu, K Lazaridis, DP Sekulic, MD Krivilyov, SD Mesarovic	K Lazaridis, Y Wu, SK Krishna Muniyal, C-N Yu, MD Krivilyov, DP Sekulic, SD Mesarovic	Lazaridis Konstantinos, Wu Yangyang, Krishna Santhosh K. Muniyal, Yu Cheng-Nien, Krivilyov Mikhail D., Sekulic Dusan P., Mesarovic Sinisa Dj.	Voroshilov Evgeniy, Krivilyov Mikhail	Shutov I. V., Kamaeva L. V., Khamidullina A. R., Krivilev M. D., Sekulic D. P.	Wu Yangyang, Yu Cheng-Nien, Sekulic Dusan P.	Yu Cheng-Nien, Lazaridis Konstantinos, Wu Yangyang, Voroshilov Evgeniy, Krivilyov Mikhail D., Mesarovic Sinisa Dj., Sekulic Dusan P.	K Lazaridis	Dehsara M., Fu H., Mesarovic S.Dj, Sekulic D.P., Krivilyov M.	Jaric Jovo P., Vignjevic Rade, Mesarovic Sinisa Dj.	IV Shutov, LV Kamaeva, AR Khamidulina, MD Krivilyov, DP Sekulic	DP Sekulic, J Bassindale	Y Wu	C-N Yu	Shutov I.V., Kamaeva L.V., Krivilyov M.D., Yu C.-N., Mesarovic S.Dj., Sekulic D.P.	Koehler Tobias, Yu Cheng-Nien, Schmidt Kiril, Graetzel Michael, Wu Yangyang, Bergmann Jean Pierre, Sekulic Dusan P.	M Dehsara, H Fu, SD Mesarovic, DP Sekulic, M Krivilyov	Y Wu, C-N Yu, DP Sekulic	C-N Yu, Y Wu, DP Sekulic	S Mesarovic	Sekulic D.P.	SD Mesarovic, DP Sekulic, M Krivilyov, I Shutov, E Voroshilov	C-N, Yu, Y Wu, DP Sekulic	Y Wu, H Fu, DK Hawksworth, C-N Yu, DP Sekulic	DP Sekulic, SD Mesarovic, MD Krivilev, C-N Yu, Y Wu, K Lazaridis	Dehsara M., Fu H., Mesarovic S.Dj, Sekulic D.P., Krivilyov M.	M Dehsara	Y Wu, C-N Yu, DP Sekulic	S Kovacevic	K Lazaridis	S Krishna	Gruzd Svetlana A., Krivilyov Mikhail D., Samsonov Dmitry S., Wu Yangyang, Sekulic Dusan P., Mesarovic Sinisa Dj.	Kovacevic S., Mesarovic S.Dj.	DP Sekulic, Y Wu, SD Mesarovic, K Lazaridis, MD Krivilyov	Lazaridis Konstantinos, Wu Yangyang, Krishna Santhosh K. Muniyal, Yu Cheng-Nien, Krivilyov Mikhail D., Sekulic Dusan P., Mesarovic Sinisa Dj.	Wu Yangyang, Lazaridis Konstantinos, Krivilyov Mikhail D., Mesarovic Sinisa Dj., Sekulic Dusan P.	Wu Yangyang, Lazaridis Konstantinos, Muniyal Krishna Santhosh K., Yu Cheng-Nien, Krivilyov Mikhail D., Mesarovic Sinisa Dj., Sekulic Dusan P.	DP Sekulic, SD Mesarovic, MD Krivilev, C-N Yu, Y Wu, K Lazaridis, IV Shutov, LV Kamaev
+Study Publication Title	Benchmarks for capillary flows under terrestrial and zero gravity conditions, 36th Annual Meeting of the American Society for Gravitational and Space Research, Virtual Meeting, November 5-6, 2020.	Kinetics of the triple line on wetting and non-wetting surfaces; relaxation and ageing, 14th World Congress in Computational Mechanics (WCCM) ECCOMAS Congress 2020. January 2021	Ageing of equilibrium contact angle in capillary flows, APS Division of Fluid Dynamics (Fall) 2021, abstract id.P12.012	Contact angle ageing and anomalous capillary flow of a molten metal	Simulation of wetting of a solid of revolution by viscous liquid	Phase Transformations Under Heat Treatment of Al – Si + Flux Composite Brazing Metal	Si diffusion across the liquid/solid interface of capillary driven (Al–Si)-KxAlyFz micro-layers	Filling a hole by capillary flow of liquid metal–equilibria and instabilities	Phase field model for capillary flow of molten alloys in variable gravity, Ph.D. Dissertation, Washington State University	(In)compressibility and parameter identification in phase field models for capillary flows	Transport Theorem for Spaces and Subspaces of Arbitrary Dimensions	Phase transformations in thermal treatment of composite Al-Si+flux braze,  Metallovedenie i Termicheskaya Obrabotka Metallov (MITOM) (Russian Journal). Vol 8 (2020), pp. 10-14	Aluminum Controlled Atmosphere Brazing (CAB),  AWS Brazing Handbook. Chapter P-9, American Welding Society (2020)	Capillary Flow of Liquid Aluminum Alloy in Wetting and Wetting/Non-wetting Systems, Ph.D. Dissertation, University of Kentucky	Molten Aluminum Capillary Hole-Filling	Effect of processing parameters on microstructure in brazing of Al–Si alloys	Development of a repair process for manmade structures in space by using aluminium brazing and friction stir spot welding	Phase field models for capillary flows	Dancing of Liquid Metal,  34th Annual Meeting of the American Society for Gravitational and Space Research - Honorable Mention Award, Art Competition. November 2018	Modeling of a capillary driven cavity filling process in aluminum brazing, Mechanical Engineering Graduate Showcase: Poster Competition, 2nd runner-up of Best Poster Award. University of Kentucky. November 2018	Physical Foundations of Mesoscale Continua, Mesoscale Models. Vol 587 (2018), pp 1-50	Brazing of Aluminum Alloys	Wetting phenomena in brazing of Al alloys in microgravity (space experiment BRAINS)	Capillary Flow on an Aluminum Brazing Sheet in a Gravity Field: A Phenomenological Study, International Brazing and Soldering Conference, 2018	Diffusion Fields in TRILLIUM Brazing Sheet under Different Heating Rates,  International Brazing and Soldering Conference (IBSC). April 2018	A large mass of Al-Si molten braze in a gravity field, 6th International Conference Advances in Brazing and Soldering Technologies. September 2019	(In)compressibility and parameter identification in phase field models for capillary flows	Capillary Flow of Liquid Metals in Brazing, Ph.D. Dissertation, Washington State University, 2017	Aluminum Braze Triple Line Movement in a Wetting/Non-wetting Setting under Variable Surface Roughness and Inclinations, International Brazing and Soldering Conference. April 2018	Micromechanical Modeling of Joining and Manufacturing Processes, Ph.D. Dissertation, Washington State University, 2021	Capillary Flow of a Brazing Alloy in Normal and Microgravity Conditions: Computations, Ph.D. Dissertation, Washington State University, 2021	Some Fluid Mechanics Problems for Space Exploration, Ph.D. Dissertation, Washington State University, 2021	Non-isothermal Wetting of an Al Alloy Pin by Al-Si Melt under Terrestrial and Microgravity Conditions	Diffusion-induced stress concentrations in diffusional creep	Capillary Flow of Aluminum Braze in Microgravity	Contact angle ageing and anomalous capillary flow of a molten metal	Effects of gravity on the capillary flow of a molten metal	Anomalous capillary flow of molten Al Si alloy and macrosegregation	A large mass of Ai-Si molten braze in a gravity field,  Invited Lecture, 6th International Conference Advanced in Brazing and Soldering Technologies. September 2019
+Study Publication Status	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO		EFO	EFO	EFO	EFO
+Comment[Study Publication Link]			https://ui.adsabs.harvard.edu/abs/2021APS..DFDP12012L/abstract	http://dx.doi.org/10.1063/5.0123707	http://dx.doi.org/10.1063/5.0003586	http://dx.doi.org/10.1007/s11041-020-00591-4	http://dx.doi.org/10.1007/s10853-020-05689-x	http://dx.doi.org/10.1063/5.0039718		http://dx.doi.org/10.2298/tam170803009d	http://dx.doi.org/10.3390/math8060899			https://doi.org/10.13023/etd.2020.273	https://doi.org/10.13023/etd.2020.168	http://dx.doi.org/10.1016/j.jcrysgro.2019.125287	http://dx.doi.org/10.26628/wtr.v91i9.1072	/https://congress.cimne.com/eccm_ecfd2018/admin/files/fileabstract/a880.pdf			https://link.springer.com/chapter/10.1007%2F978-3-319-94186-8_1	http://dx.doi.org/10.31399/asm.hb.v02a.a0006529	https://elibrary.ru/xrozec				http://dx.doi.org/10.2298/tam170803009d	https://hdl.handle.net/2376/12977		https://doi.org/10.7273/000003156	https://doi.org/10.7273/000003360	https://doi.org/10.7273/000003131	http://dx.doi.org/10.1007/s12217-022-09973-0	http://dx.doi.org/10.1016/j.ijsolstr.2022.111440		http://dx.doi.org/10.1063/5.0123707	http://dx.doi.org/10.1016/j.colsurfa.2022.130400	http://dx.doi.org/10.1016/j.jmapro.2023.06.006	
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+Study Factor Type Term Accession Number
+Study Factor Type Term Source REF
+STUDY ASSAYS
+Study Assay File Name
+Study Assay Measurement Type
+Study Assay Measurement Type Term Accession Number
+Study Assay Measurement Type Term Source REF
+Study Assay Technology Type
+Study Assay Technology Type Term Accession Number
+Study Assay Technology Type Term Source REF
+Study Assay Technology Platform
+STUDY PROTOCOLS
+Study Protocol Name
+Study Protocol Type
+Study Protocol Type Term Accession Number
+Study Protocol Type Term Source REF
+Study Protocol Description
+Study Protocol URI
+Study Protocol Version
+Study Protocol Parameters Name
+Study Protocol Parameters Name Term Accession Number
+Study Protocol Parameters Name Term Source REF
+Study Protocol Components Name
+Study Protocol Components Type
+Study Protocol Components Type Term Accession Number
+Study Protocol Components Type Term Source REF
+STUDY CONTACTS
+Study Person Last Name	(Krivilev)	Sekulic	Hanson	Mesarovic
+Study Person First Name	Mikhail Krivilyov	Dusan	Ian	Sinisa
+Study Person Mid Initials				
+Study Person Email	mk@udsu.ru	sekulicd@engr.uky.edu	ian.m.hanson@nasa.gov	smesarovic@wsu.edu
+Study Person Phone				
+Study Person Fax				
+Study Person Address				
+Study Person Affiliation	Udmurt State University	University of Kentucky	NASA MSFC	Washington State University
+Study Person Roles	Co-Investigator (Co-I)	Principal Investigator (PI)	Project Scientist	Co-Investigator (Co-I)
+Study Person Roles Term Accession Number	Co-Investigator (Co-I)	Principal Investigator (PI)	Project Scientist	Co-Investigator (Co-I)
+Study Person Roles Term Source REF				
+Comment[Study Person REF]				
