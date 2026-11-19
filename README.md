@@ -10,7 +10,7 @@ separate LLM API key (everything runs on your own Claude Code subscription).
 
 - **[Claude Code](https://code.claude.com/docs/en/overview)** — plugins are a
   Claude Code feature. This marketplace does **not** work on Claude Desktop
-  (or claude.ai) as of now.
+  (or Claude on the web) as of now.
 
 Individual plugins may have additional requirements (e.g. Node.js) — see
 each plugin's README.
